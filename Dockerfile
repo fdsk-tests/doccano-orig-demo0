@@ -1,7 +1,7 @@
-ARG PYTHON_VERSION="3.6"
+ARG PYTHON_VERSION=3.6
 FROM python:${PYTHON_VERSION} AS builder
 
-ARG NODE_VERSION="8.x"
+ARG NODE_VERSION=8.x
 RUN curl -sL "https://deb.nodesource.com/setup_${NODE_VERSION}" | bash - \
  && apt-get install nodejs
 
