@@ -29,27 +29,6 @@ Final demo is one of the sequence to sequence tasks, machine translation. Since 
 
 ## Deployment
 
-### Azure
-
-Doccano can be deployed to Azure ([Web App for Containers](https://azure.microsoft.com/en-us/services/app-service/containers/) +
-[PostgreSQL database](https://azure.microsoft.com/en-us/services/postgresql/)) by clicking on the button below:
-
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchakki-works%2Fdoccano%2Fmaster%2Fazuredeploy.json)
-
-### Heroku
-
-Doccano can be deployed to [Heroku](https://www.heroku.com/) by clicking on the button below:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-Of course, you can deploy doccano by using [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli).
-
-```bash
-heroku create
-heroku stack:set container
-git push heroku master
-```
-
 ### AWS
 
 Doccano can be deployed to AWS ([Cloudformation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)) by clicking on the button below:
