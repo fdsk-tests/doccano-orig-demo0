@@ -42,7 +42,6 @@ Doccano can be deployed to AWS ([Cloudformation](https://docs.aws.amazon.com/AWS
 
 * Collaborative annotation
 * Multi-Language support
-* Emoji :smile: support
 * (future) Auto labeling
 
 ## Requirements
