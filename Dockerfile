@@ -30,7 +30,7 @@ RUN cd /doccano \
 FROM python:${PYTHON_VERSION}-slim AS runtime
 
 COPY --from=builder /deps /deps
-RUN pip install --no-cache-dir /deps/*.whl
+RUN pip install --no-cache-dir "/deps/*.whl"
 
 COPY --from=cleaner /doccano /doccano
 
