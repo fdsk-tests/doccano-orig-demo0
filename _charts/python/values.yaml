@@ -14,7 +14,7 @@ env:
 knativeDeploy: false
 
 service:
-  name: doccano-orig-demo
+  name: doccano
   type: ClusterIP
   externalPort: 80
   internalPort: 8080
