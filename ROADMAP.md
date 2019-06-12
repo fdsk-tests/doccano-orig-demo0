@@ -57,14 +57,6 @@ This is a list of features on the short term roadmap and beyond:
 * Support for custom tokenization.
 * More performance optimizations.
 
-## Accessibility
-
-* Support smartphone to enable anyone to annotate anywhere.
-* Enable to customize font and font-family.
-* Enable to customize label color per user.
-* Enable to customize site theme per user.
- 
- 
 ## Entire project
 
 * Design Vue component and use it to implement frontend.
