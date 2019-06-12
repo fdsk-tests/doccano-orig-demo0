@@ -152,17 +152,14 @@ docker-compose up
 
 Now, open a Web browser and go to <http://127.0.0.1:8000/login/>. You should see the login screen:
 
-<img src="./docs/login_form.png" alt="Login Form" width=400>
 
 ### Create a project
 
 Now, try logging in with the superuser account you created in the previous step. You should see the doccano project list page:
 
-<img src="./docs/projects.png" alt="projects" width=600>
 
 There is no project created yet. To create your project, make sure you’re in the project list page and select `Create Project` button. You should see the following screen:
 
-<img src="./docs/create_project.png" alt="Project Creation" width=400>
 
 In this step, you can select three project types: text classificatioin, sequence labeling and sequence to sequence. You should select a type with your purpose.
 
@@ -170,7 +167,6 @@ In this step, you can select three project types: text classificatioin, sequence
 
 After creating a project, you will see the "Import Data" page, or click `Import Data` button in the navigation bar. You should see the following screen:
 
-<img src="./docs/upload.png" alt="Upload project" width=600>
 
 You can upload two types of files:
 - `CSV file`: file must contain a header with a `text` column or be one-column csv file.
@@ -201,20 +197,17 @@ Once you select a TXT/JSON file on your computer, click `Upload dataset` button.
 
 Click `Labels` button in left bar to define your own labels. You should see the label editor page. In label editor page, you can create labels by specifying label text, shortcut key, background color and text color.
 
-<img src="./docs/label_editor.png" alt="Edit label" width=600>
 
 
 ### Annotation
 
 Now, you are ready to annotate the texts. Just click the `Annotate Data` button in the navigation bar, you can start to annotate the documents you uploaded.
 
-<img src="./docs/annotation.png" alt="Edit label" width=600>
 
 ### Export Data
 
 After the annotation step, you can download the annotated data. Click the `Edit data` button in navigation bar, and then click `Export Data`. You should see below screen:
 
-<img src="./docs/export_data.png" alt="Edit label" width=600>
 
 You can export data as CSV file or JSON file by clicking the button. As for the export file format, you can check it here: [Export File Formats](https://github.com/chakki-works/doccano/wiki/Export-File-Formats). 
 
