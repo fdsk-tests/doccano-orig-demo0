@@ -29,7 +29,7 @@ RUN pip install --no-cache-dir /deps/*.whl
 
 ENV DEBUG="True"
 ENV SECRET_KEY="change-me-in-production"
-ENV PORT="80"
+ENV PORT="8080"
 ENV WORKERS="2"
 ENV GOOGLE_TRACKING_ID=""
 ENV AZURE_APPINSIGHTS_IKEY=""
