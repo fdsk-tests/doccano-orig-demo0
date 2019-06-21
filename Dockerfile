@@ -6,8 +6,7 @@ RUN curl -sL "https://deb.nodesource.com/setup_${NODE_VERSION}" | bash - \
  && apt-get install nodejs
 
 COPY app/server/static/package*.json /doccano/app/server/static/
-RUN cd /doccano/app/server/static \
- && npm ci
+RUN cd /doccano/app/server/static && npm ci
 
 COPY requirements.txt /
 RUN pip install -r /requirements.txt \
