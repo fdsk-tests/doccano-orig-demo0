@@ -2,9 +2,9 @@ buildPack: python
 pipelineConfig:
   pipelines:
     pullRequest:
-      build:
-        preSteps:
-          - command: pip install coverage
-            name: install coverage
-          - command: coverage run --source=app app/manage.py test server.tests
-            name: doccano-py-test
+      preBuild:
+        steps:
+        - command: pip install coverage
+          name: install-cov
+        - command: coverage run --source=app app/manage.py test server.tests
+          name: run-cov
