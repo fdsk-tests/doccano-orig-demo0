@@ -6,5 +6,7 @@ pipelineConfig:
         steps:
         - command: pip install coverage
           name: install-cov
-        - command: coverage run --source=app app/manage.py test server.tests
+        - command: which pip && pip freeze
+          name: debug
+        - command: /bin/bash -c 'coverage run --source=app app/manage.py test server.tests'
           name: run-cov
