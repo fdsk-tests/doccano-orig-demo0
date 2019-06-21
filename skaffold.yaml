@@ -2,7 +2,7 @@ apiVersion: skaffold/v1beta2
 kind: Config
 build:
   artifacts:
-  - image: fdsk-tests/doccano-orig-demo
+  - image: fdsk-tests/doccano-orig-demo0
     context: .
     docker: {}
   tagPolicy:
@@ -21,8 +21,8 @@ profiles:
   deploy:
     helm:
       releases:
-      - name: doccano-orig-demo
-        chartPath: charts/doccano-orig-demo
+      - name: doccano-orig-demo0
+        chartPath: charts/doccano-orig-demo0
         setValueTemplates:
           image.repository: '{{.DOCKER_REGISTRY}}/{{.IMAGE_NAME}}'
           image.tag: '{{.DIGEST_HEX}}'

@@ -15,9 +15,6 @@ RUN pip install -r /requirements.txt \
 
 COPY . /doccano
 
-RUN cd /doccano \
- && tools/ci.sh
-
 RUN cd /doccano/app/server/static \
  && SOURCE_MAP=False DEBUG=False npm run build \
  && rm -rf components pages node_modules .*rc package*.json webpack.config.js

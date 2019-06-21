@@ -1,1 +1,7 @@
 buildPack: python
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      preBuild:
+        steps:
+        - command: chmod +x ./tools/ci.sh && ./tools/ci.sh
