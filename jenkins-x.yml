@@ -1,4 +1,4 @@
-buildPack: python37
+buildPack: python
 pipelineConfig:
   pipelines:
     pullRequest:
