@@ -4,5 +4,4 @@ pipelineConfig:
     pullRequest:
       preBuild:
         steps:
-        - command: python3 -V && python3 -m pip install -U pip && python3 -m pip install coverage && python3 app/manage.py test server.tests
-          name: install-run-cov
+        - command: chmod +x ./tools/ci.sh && ./tools/ci.sh
