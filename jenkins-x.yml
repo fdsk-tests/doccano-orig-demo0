@@ -4,9 +4,5 @@ pipelineConfig:
     pullRequest:
       preBuild:
         steps:
-        - command: pip install coverage
-          name: install-cov
-        - command: which pip && pip freeze
-          name: debug
-        - command: /bin/bash -c 'coverage run --source=app app/manage.py test server.tests'
-          name: run-cov
+        - command: pip install coverage && pip freeze && coverage run --source=app app/manage.py test server.tests
+          name: install-run-cov
