@@ -4,10 +4,13 @@ NAME := doccano-orig-demo
 OS := $(shell uname)
 RELEASE_VERSION := $(shell cat ../../VERSION)
 
-build: clean
+build: clean test
 	rm -rf requirements.lock
 	helm dependency build
 	helm lint
+
+test:
+	coverage run --source=app app/manage.py test server.tests
 
 install: clean build
 	helm install . --name ${NAME}
