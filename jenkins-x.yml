@@ -4,5 +4,7 @@ pipelineConfig:
     pullRequest:
       build:
         preSteps:
-        - command: coverage run --source=app app/manage.py test server.tests
-          name: doccano-py-test
+          - command: pip install coverage
+            name: install coverage
+          - command: coverage run --source=app app/manage.py test server.tests
+            name: doccano-py-test
